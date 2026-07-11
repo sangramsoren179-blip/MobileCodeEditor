@@ -1,31 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Mobile Code Editor</title>
+
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/editor.css">
 </head>
+
 <body>
-    
-    <header class="navbar">
-        <button id="menuBtn">☰</button>
-        <h1>Editor</h1>
-        <div>
-            <button id="newBtn">New</button>
-            <button id="saveBtn">Save</button>
-        </div>
-    </header>
-    
-    <main>
-        <textarea id="editor" spellcheck="false" placeholder="Start typing..."></textarea>
-    </main>
-    
-    <script src="js/storage.js"></script>
-    <script src="js/fileManager.js"></script>
-    <script src="js/editor.js"></script>
-    <script src="js/app.js"></script>
-    
+
+<header class="navbar">
+    <button id="menuBtn">☰</button>
+
+    <h1>Editor</h1>
+
+    <div>
+        <button id="newBtn">New</button>
+        <button id="saveBtn">Save</button>
+    </div>
+</header>
+
+<main>
+    <textarea
+        id="editor"
+        spellcheck="false"
+        placeholder="Start typing..."></textarea>
+</main>
+
+<script type="module" src="js/app.js"></script>
+
 </body>
 </html>

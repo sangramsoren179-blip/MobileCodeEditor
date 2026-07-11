@@ -1,14 +1,17 @@
+import { saveData } from "./storage.js";
+import { currentFile } from "./fileManager.js";
+import { editor } from "./editor.js";
+
 const saveBtn = document.getElementById("saveBtn");
 const newBtn = document.getElementById("newBtn");
-saveBtn.onclick = () => {
-    saveData(
-        currentFile.name,
-        currentFile.content
-    );
+
+saveBtn.addEventListener("click", () => {
+    saveData(currentFile.name, currentFile.content);
     alert("Saved");
-};
-newBtn.onclick = () => {
+});
+
+newBtn.addEventListener("click", () => {
     editor.value = "";
     currentFile.name = "Untitled";
     currentFile.content = "";
-};
+});
